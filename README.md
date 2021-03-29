@@ -60,6 +60,10 @@ This module will monitor air quality in each individual room via CO, CO2, FDP an
 ### Module _Curtains_
 Each instance of this module controls the curtain actuators of a window. There has to be a way to issue commands en masse to a few instances at once, grouped by some parameter (e.g. _"East windows"_).
 
+### Module _Shutters_
+This module is similar to ___Curtains___, but since it controls the exterior shutters and blinds, it is used in a more security-related aspects. Used to shut the house down when everyone has left and the ___Alarm___ module is on, used by ___Alarm___ module to simulate presence by opening and closing in certain pre-programmed patterns. Used by ___Heating___ module to preserve energy (in the role of more efficient curtains) and by ___Weather___ module to provide protection of the home from hails and storms.
+Hardware is similar to that of ___Curtains___, however there's an added option of locking the shutters in closed position with a solenoid lock to prevent forcing them open. Actuators are a heavier duty ones as well, as to accomodate the option for heavier intrusion-proof shutters.
+
 ### Module _Heating_
 Module ___Heating___ controls the heating of the house. Initial version will be built around controlling thermal pump central heating, but other modes will be added as well. Because of the large number of various heating methods that will need to be covered, most likely this module will feature a set of submodules, each for a specific type of heating. 
 
@@ -81,4 +85,3 @@ This module consists of a few separate hardware devices in a common package that
 * Air humidity
 * Wind speed
 * Wind direction
-* 
