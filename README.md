@@ -5,9 +5,10 @@ Citadel is an integrated system that aims to control various end devices such as
 
 ## Interface
 The interface of Citadel is web based which makes it useable on almost any device connected to the home network. 
+_Most likely the interface will be Node.js based_
 
 ## Core
-Citadel ___Core___ is the module that handles all logic and calculations, decisions and interface requests. It also provides API for third party modules. MQTT is used for communication between ___Core___ and modules. Initial consideration for communication between the interface and ___Core___ is to use Potoo (https://github.com/DexterLB/potoo).
+Citadel ___Core___ is the module that handles all logic and calculations, decisions and interface requests. It also provides API for third party modules. MQTT is used for communication between ___Core___ and modules. _Initial consideration for communication between the interface and ___Core___ _is to use Potoo (https://github.com/DexterLB/potoo)._
 
 ## Software Modules
 Each module controls one type of end devices and can be instantiated once for each particular device (as many of the supported device types can be represented by more than one in the local setup - like doors or blinds.
@@ -41,26 +42,30 @@ Hardware consists of:
 Current hardware considerations are for sliding door. However a version for automated traditional doors will be added as well.
 
 ### Module _Weather_
-___Weather___ is another 
+___Weather___ is an information module that controls the data stream from a ___Weather Station___ hardware module. It provides ___Core___ with parameters such as outside temperature, humidity, light, wind speed, etc. 
 
 ### Module _Lightswitch_
 ___Lightswitch___ is another simple module. Each instance controls a lighting segment according to ___Core___ provided ruleset or manual override via the web interface or the integrated panel.
 
 Hardware consists of:
 * Programmable controller
-* 
+* Relay module
+* Touchscreen panel
 
 ### Module _Air quality_
+This module will monitor air quality in each individual room via CO, CO2, FDP and humidity sensors and control the ventilation system mechanisms to maintain optimal levels.
 
 ### Module _Alarm_
 
 ### Module _Curtains_
+Each instance of this module controls the curtain actuators of a window. There has to be a way to issue commands en masse to a few instances at once, grouped by some parameter (e.g. _"East windows"_).
 
-### Module _Air conditioning_
+### Module _Heating_
+Module ___Heating___ controls the heating of the house. Initial version will be built around controlling thermal pump central heating, but other modes will be added as well. Because of the large number of various heating methods that will need to be covered, most likely this module will feature a set of submodules, each for a specific type of heating. 
 
 ### Module _Kingsley_
 
-This module interprets voice commands impersonating a virtual butler
+This module interprets voice commands and prvides voice responses impersonating a virtual butler. 
 
 
 ## Hardware modules
@@ -68,4 +73,12 @@ This module interprets voice commands impersonating a virtual butler
 ### Programmable controller
 Citadel system programmable controllers are the nerves that translate the commands provided by ___Core___ to the actual devices, such as actuators and light relays, fetch the feedback data from the feedback sensors (i.e. door blocking failsafe sensors) and the data from environment monitor modules such as the ___Weather Station___ module. The programmable controllers are basically a minified version of Arduino, with only the relevant functions kept and integrated network connection (as opposed to a separate network shield). The controllers, albeit basically the same for the different peripheral modules, are an integral part of the respective periferal's PCB, in order to minimize the form factor and simplify usage and deployment.
 
-
+### Weather Station
+This module consists of a few separate hardware devices in a common package that provide a realtime stream of meteorological data. The devices measure:
+* Air temperature
+* Sunlight
+* Sun direction
+* Air humidity
+* Wind speed
+* Wind direction
+* 
