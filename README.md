@@ -81,7 +81,9 @@ This module controls a set of audio speakers scattered around the house, providi
 
 ### Module _Tracking_
 
-This module aims to provide location data for each user in the premises. Most likely by using a combination of visible light cameras and IR motion detectors. It should be able to recognise a registered user and track their motion throughout the house, as well as pets' movements and location. The goal is to provide location per request of other modules, such as ___Audio___ and ___Kingsley___ for audio feedback, music, following the user, etc. functionalities.
+This module aims to provide location data for each user in the premises. Most likely by using a combination of visible light cameras and IR motion detectors. It should be able to recognise a registered user and track their motion throughout the house, as well as pets' movements and location. The goal is to provide location per request of other modules, such as ___Audio___ and ___Kingsley___ for audio feedback, music and lighting that follow the user while moving around, etc. functionalities.
+
+Additional consideration: think of a way to detect the location of mobile devices, connected to the network - this will allow to contextualize the mobile version of the interface. E.g. use a common lightswitch button in the interface that controls the local light segment.
 
 ## Hardware modules
 
