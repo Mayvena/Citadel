@@ -88,7 +88,7 @@ Additional consideration: think of a way to detect the location of mobile device
 ## Hardware modules
 
 ### Programmable controller
-Citadel system programmable controllers are the nerves that translate the commands provided by ___Core___ to the actual devices, such as actuators and light relays, fetch the feedback data from the feedback sensors (i.e. door blocking failsafe sensors) and the data from environment monitor modules such as the ___Weather Station___ module. The programmable controllers are basically a minified version of Arduino, with only the relevant functions kept and integrated network connection (as opposed to a separate network shield). The controllers, albeit basically the same for the different peripheral modules, are an integral part of the respective periferal's PCB, in order to minimize the form factor and simplify usage and deployment.
+Citadel system programmable controllers are the nerves that translate the commands provided by ___Core___ to the actual devices, such as actuators and light relays, fetch the feedback data from the feedback sensors (i.e. door blocking failsafe sensors) and the data from environment monitor modules such as the ___Weather Station___ module. The programmable controllers are basically a minified version of Arduino, with only the relevant functions kept and integrated network connection (perhaps using a ENC28J60 LAN Ethernet Network Board Module - probably a modified version with a more secure way to plug the UTP cable instead of an RJ45). The controllers, albeit basically the same for the different peripheral modules, are an integral part of the respective periferal's PCB, in order to minimize the form factor and simplify usage and deployment.
 
 ### Weather Station
 This module consists of a few separate hardware devices in a common package that provide a realtime stream of meteorological data. The devices measure:
@@ -100,7 +100,13 @@ This module consists of a few separate hardware devices in a common package that
 * Wind direction
 
 ### Audio player
-This is an Arduino-based IP audio player. It consists of a control unit (basically an Arduino), a network interface (likely an ... module), a DAC, an audio amplifier (perhaps LM386 based) and a speaker (most likely a specific one for ceiling montage).
+This is an Arduino-based IP audio player. It consists of a ___Programmable controller___ module, a DAC, an audio amplifier (perhaps LM386 based) and a speaker (most likely a specific one for ceiling montage).
 Some food for thought: 
 * https://circuitdigest.com/microcontroller-projects/arduino-audio-music-player
 
+## Supply links:
+
+### Network interface
+* https://www.aliexpress.com/item/32548974618.html
+* https://www.aliexpress.com/item/32759613417.html
+* 
