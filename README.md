@@ -8,7 +8,7 @@ The interface of Citadel is web based which makes it useable on almost any devic
 _Most likely the interface will be Node.js based_
 
 ## Core
-Citadel ___Core___ is the module that handles all logic and calculations, decisions and interface requests. It also provides API for third party modules. MQTT is used for communication between ___Core___ and modules. _Initial consideration for communication between the interface and ___Core___ _is to use Potoo (https://github.com/DexterLB/potoo)._
+Citadel ___Core___ is the module that handles all logic and calculations, decisions and interface requests. It also provides API for third party modules. MQTT is used for communication between ___Core___ and modules. _Initial consideration for communication between the interface and_ ___Core___ _is to use Potoo (https://github.com/DexterLB/potoo)._
 
 ## Software Modules
 Each module controls one type of end devices and can be instantiated once for each particular device (as many of the supported device types can be represented by more than one in the local setup - like doors or blinds.
