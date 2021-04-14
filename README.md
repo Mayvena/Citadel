@@ -9,6 +9,7 @@ _Most likely the interface will be Node.js based_
 
 ## Core
 Citadel ___Core___ is the module that handles all logic and calculations, decisions and interface requests. It also provides API for third party modules. MQTT is used for communication between ___Core___ and modules. _Initial consideration for communication between the interface and_ ___Core___ _is to use Potoo (https://github.com/DexterLB/potoo)._
+
 Further reading: https://mqtt.org/
 
 ## Software Modules
