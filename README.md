@@ -90,6 +90,11 @@ Additional consideration: think of a way to detect the location of mobile device
 ### Programmable controller
 Citadel system programmable controllers are the nerves that translate the commands provided by ___Core___ to the actual devices, such as actuators and light relays, fetch the feedback data from the feedback sensors (i.e. door blocking failsafe sensors) and the data from environment monitor modules such as the ___Weather Station___ module. The programmable controllers are basically a minified version of Arduino, with only the relevant functions kept and integrated network connection (perhaps using a ENC28J60 LAN Ethernet Network Board Module - probably a modified version with a more secure way to plug the UTP cable instead of an RJ45). The controllers, albeit basically the same for the different peripheral modules, are an integral part of the respective periferal's PCB, in order to minimize the form factor and simplify usage and deployment.
 
+### Control panel
+The universal control panel is a fixed mini computer, most likely based on a Banana Pi Zero WH or a Raspberry Pi Zero with a touchscreen panel. It will run a minified Raspbian distribution with a Cog browser displaying the ___Interface___ module. Considering two variants:
+* Fixed - this one is fixed to a wall and connected to the network via ethernet cable and powered through power wiring
+* Mobile - featuring an integrated LiPo battery, balancer, and a USB charging port. Also considering a wireless option for charging, using a dedicated stand. It will use WiFi to connect to the network and fetch the interface. 
+
 ### Weather Station
 This module consists of a few separate hardware devices in a common package that provide a realtime stream of meteorological data. The devices measure:
 * Air temperature
