@@ -77,7 +77,8 @@ _Pending steps:_
 
 ### Module _Audio_
 
-This module controls a set of audio speakers scattered around the house, providing audio interface to other modules and routines. Takes as parameters the ID of the speaker and an audio stream that is to be played through it. Can be used by ___Kingsley___ to provide voice replies to queries, to stream music, radio, messages etc.
+This module controls a set of audio speakers scattered around the house, providing audio interface to other modules and routines. Takes as parameters the ID of the speaker and an audio stream that is to be played through it. Can be used by ___Kingsley___ to provide voice replies to queries, to stream music, radio, messages etc. 
+Also should have the option to connect to YoutubeMusic and Spotify APIs to play user's playlists.
 
 ### Module _Tracking_
 
