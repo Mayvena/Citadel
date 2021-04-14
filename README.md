@@ -98,3 +98,9 @@ This module consists of a few separate hardware devices in a common package that
 * Air humidity
 * Wind speed
 * Wind direction
+
+### Audio player
+This is an Arduino-based IP audio player. It consists of a control unit (basically an Arduino), a network interface (likely an ... module), a DAC, an audio amplifier (perhaps LM386 based) and a speaker (most likely a specific one for ceiling montage).
+Some food for thought: 
+* https://circuitdigest.com/microcontroller-projects/arduino-audio-music-player
+
