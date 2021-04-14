@@ -69,8 +69,19 @@ Module ___Heating___ controls the heating of the house. Initial version will be 
 
 ### Module _Kingsley_
 
-This module interprets voice commands and prvides voice responses impersonating a virtual butler. 
+This module interprets voice commands and provides voice responses impersonating a virtual butler. 
+_Pending steps:_
+* Find an open source voice recognition software. Preferrably one that can work offline.
+* Check for ways to implement different languages. 
+* Would be nice to have it automatically recognize the language being used by user.
 
+### Module _Audio_
+
+This module controls a set of audio speakers scattered around the house, providing audio interface to other modules and routines. Takes as parameters the ID of the speaker and an audio stream that is to be played through it. Can be used by ___Kingsley___ to provide voice replies to queries, to stream music, radio, messages etc.
+
+### Module _Tracking_
+
+This module aims to provide location data for each user in the premises. Most likely by using a combination of visible light cameras and IR motion detectors. It should be able to recognise a registered user and track their motion throughout the house, as well as pets' movements and location. The goal is to provide location per request of other modules, such as ___Audio___ and ___Kingsley___ for audio feedback, music, following the user, etc. functionalities.
 
 ## Hardware modules
 
