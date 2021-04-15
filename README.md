@@ -109,9 +109,10 @@ This module consists of a few separate hardware devices in a common package that
 * Wind direction
 
 ### Audio player
-This is an Arduino-based IP audio player. It consists of a ___Programmable controller___ module, a DAC, an audio amplifier (perhaps LM386 based) and a speaker (most likely a specific one for ceiling montage).
+This is an Arduino-based IP audio player. It consists of a ___Programmable controller___ module, a DAC, an audio amplifier (perhaps TPA3144D2 based) and a speaker (most likely a specific one for ceiling montage).
 Some food for thought: 
 * https://circuitdigest.com/microcontroller-projects/arduino-audio-music-player
+* https://www.schematics.com/project/6w-inductor-free-stereo-btl-class-d-audio-amplifier-circuit-diagram-27741/
 
 ## Supply links:
 
