@@ -35,7 +35,7 @@ Auto close times can be adjusted
 Hardware consists of:
 * Door actuator
 * Door proximity sensor
-* Door vicinity failsafe sensor
+* Door block failsafe sensor
 * Optional door lock
 * Optional wall touch panel
 * Optional wall RFID reader
