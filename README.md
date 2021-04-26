@@ -77,6 +77,9 @@ _Pending steps:_
 * Check for ways to implement different languages. 
 * Would be nice to have it automatically recognize the language being used by user.
 
+Some reading material: https://www.geeksforgeeks.org/voice-assistant-using-python/
+
+
 ### Module _Audio_
 
 This module controls a set of audio speakers scattered around the house, providing audio interface to other modules and routines. Takes as parameters the ID of the speaker and an audio stream that is to be played through it. Can be used by ___Kingsley___ to provide voice replies to queries, to stream music, radio, messages etc. 
@@ -87,6 +90,8 @@ Also should have the option to connect to YoutubeMusic and Spotify APIs to play 
 This module aims to provide location data for each user in the premises. Most likely by using a combination of visible light cameras and IR motion detectors. It should be able to recognise a registered user and track their motion throughout the house, as well as pets' movements and location. The goal is to provide location per request of other modules, such as ___Audio___ and ___Kingsley___ for audio feedback, music and lighting that follow the user while moving around, etc. functionalities.
 
 Additional consideration: think of a way to detect the location of mobile devices, connected to the network - this will allow to contextualize the mobile version of the interface. E.g. use a common lightswitch button in the interface that controls the local light segment.
+
+A similar open source project to check out: https://www.openhab.org/
 
 ## Hardware modules
 
