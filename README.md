@@ -91,7 +91,17 @@ This module aims to provide location data for each user in the premises. Most li
 
 Additional consideration: think of a way to detect the location of mobile devices, connected to the network - this will allow to contextualize the mobile version of the interface. E.g. use a common lightswitch button in the interface that controls the local light segment.
 
+### Module _Mousedroid_
+
+This module controls mobile units around the home - like lawnmowers, vacuum cleaners, moping units, etc. Uses the Rover variant of Ardupilot open source software and a combination of GPS navigation and radiobeacon triangulation, as well as environment mapping algorithm and user-set coordinates of the area of activity. 
+
+### Module _Area_ 
+
+Interface module, used to set up zones for the activities of the various mobile uints, e.g. the garden for the lawnmower etc.
+
+
 A similar open source project to check out: https://www.openhab.org/
+
 
 ## Hardware modules
 
@@ -112,6 +122,12 @@ This module consists of a few separate hardware devices in a common package that
 * Air humidity
 * Wind speed
 * Wind direction
+
+### Lawnmower
+
+### Radio beacon
+
+
 
 ### Audio player
 This is an Arduino-based IP audio player. It consists of a ___Programmable controller___ module, a DAC, an audio amplifier (perhaps TPA3144D2 based) and a speaker (most likely a specific one for ceiling montage).
