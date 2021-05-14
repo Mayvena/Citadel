@@ -124,10 +124,10 @@ This module consists of a few separate hardware devices in a common package that
 * Wind direction
 
 ### Lawnmower
+An Ardupilot-based (Rover variant) control system, interfacing with a lawnmower drive motor and controls; using a combination of the Ardupilot satellite navigation and an additional beacon triangulation module for added precision. Features graphical interface for setting up zones of operation on a satellite map.
 
-### Radio beacon
-
-
+### Lawnmower dock
+A docking station for the ___Lawnmower___, featuring a power recharge system for the ___Lawnmower___ and a radio beacon that allows it to triangulate its position in relation to the dock. Used both as a means of more precise positioning in the serviced area and as a way to locate the dock itself when recharging is needed.
 
 ### Audio player
 This is an Arduino-based IP audio player. It consists of a ___Programmable controller___ module, a DAC, an audio amplifier (perhaps TPA3144D2 based) and a speaker (most likely a specific one for ceiling montage).
