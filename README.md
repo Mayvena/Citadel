@@ -130,7 +130,7 @@ An Ardupilot-based (Rover variant) control system, interfacing with a lawnmower 
 A docking station for the ___Lawnmower___, featuring a power recharge system for the ___Lawnmower___ and a radio beacon that allows it to triangulate its position in relation to the dock. Used both as a means of more precise positioning in the serviced area and as a way to locate the dock itself when recharging is needed.
 
 ### Audio player
-This is an Arduino-based IP audio player. It consists of a ___Programmable controller___ module, a DAC, an audio amplifier (perhaps TPA3144D2 based) and a speaker (most likely a specific one for ceiling montage).
+This is an Arduino-based IP audio player. It consists of a ___Programmable controller___ module, a DAC, an audio amplifier (perhaps TPA3144D2 based) and a speaker (most likely an IP67 specific one for ceiling montage).
 Some food for thought: 
 * https://circuitdigest.com/microcontroller-projects/arduino-audio-music-player
 * https://www.schematics.com/project/6w-inductor-free-stereo-btl-class-d-audio-amplifier-circuit-diagram-27741/
