@@ -134,6 +134,7 @@ This is an Arduino-based IP audio player. It consists of a ___Programmable contr
 Some food for thought: 
 * https://circuitdigest.com/microcontroller-projects/arduino-audio-music-player
 * https://www.schematics.com/project/6w-inductor-free-stereo-btl-class-d-audio-amplifier-circuit-diagram-27741/
+* https://hub.balena.io/balenalabs/balenasound/?utm_medium=etcher&utm_source=efp&utm_campaign=balena-hub&utm_content=v1
 
 ## Supply links:
 
