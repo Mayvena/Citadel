@@ -141,4 +141,6 @@ Some food for thought:
 ### Network interface
 * https://www.aliexpress.com/item/32548974618.html
 * https://www.aliexpress.com/item/32759613417.html
-* 
+
+
+https://code.tutsplus.com/tutorials/how-to-create-a-smart-device-with-arduino-and-nodejs-using-pubnub--cms-25508
