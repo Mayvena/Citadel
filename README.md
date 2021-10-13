@@ -142,5 +142,6 @@ Some food for thought:
 * https://www.aliexpress.com/item/32548974618.html
 * https://www.aliexpress.com/item/32759613417.html
 
-
+https://ww2.mathworks.cn/help/instrument/read-data-from-arduino-using-tcpip-communication.html
+https://www.arduino.cc/en/Tutorial/LibraryExamples/DhcpAddressPrinter
 https://code.tutsplus.com/tutorials/how-to-create-a-smart-device-with-arduino-and-nodejs-using-pubnub--cms-25508
